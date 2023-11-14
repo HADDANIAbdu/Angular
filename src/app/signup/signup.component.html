@@ -1,0 +1,32 @@
+<div class="wrapper">
+    <span class="icon-close"><fa-icon [icon]="icon1"></fa-icon></span>
+    <div class="form-box login">
+        <h2>Sign Up</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><fa-icon [icon]="icon2"></fa-icon></span>
+                <input type="text" required>
+                <label id="name">Full Name</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><fa-icon [icon]="icon3"></fa-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><fa-icon [icon]="icon4"></fa-icon></span>
+                <input type="password" required>
+                <label id="pass">Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required> I accept the terms of use & privacy policy</label>
+            </div>
+            <button type="submit" class="btn">Sign up</button>
+            <div class="login-register">
+                <p>Already have an account?<a routerLink="/login" class="register-link"> Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: url('image2.jpg');
+    background-size: cover; /* Make the background image responsive */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 110vh;
+  }
+  @media screen and (max-width: 820px) {
+      body{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background: url('image5.jpg');
+          background-size: cover; /* Make the background image responsive */
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-attachment: fixed;
+        }
+  }

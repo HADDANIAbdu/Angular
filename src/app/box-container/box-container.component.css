@@ -1,0 +1,300 @@
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 130px;
+
+  }
+  .box-container div:first-child {
+    margin-left: 120px;
+  }
+  .box-container div:nth-child(4) {
+    margin-left: 120px;
+  }
+  .box-container div:nth-child(7) {
+    margin-left: 120px;
+  }
+  .box-container h4 {
+    padding-left: 5px;
+    margin-top: 5px;
+    color: black;
+    font-size: 12px;
+    font-family:'Poppins', sans-serif;
+  }
+  .box-container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9px;
+    margin-top: -10px;
+    text-align: center;
+    color: black;
+    font-style: italic;
+  }
+  .box-container a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+  .box-container button{
+    border: none;
+    background: #ff6600;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .box-container button:hover{
+    background: black;
+    color: white;
+    border: none;
+  }
+  .box {
+    width: 220px;
+    height: 100px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: 180px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .box:hover {
+    transform: scale(1.05);
+    background-color: white;
+  }
+  .box-1 {
+    width: 220px;
+    height: 100px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .box-1:hover {
+    transform: scale(1.05);
+    background-color: white;
+  }
+  .box-2 {
+    display: flex;
+    width: 1000px;
+    height: 270px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 120px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .box-2 img{
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+  }
+  .box-2 a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+  .box-2 button{
+    border: none;
+    background: #ff6600;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-right: 80px;
+    padding: 5px;
+  }
+  .box-2 button:hover{
+    background: black;
+    color: white;
+    border: none;
+  }
+  .box-2-1 {
+    height: 200px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    padding-top: 30px;
+    margin-right: 35px;
+    margin-left: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .box-2-1:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(gray , skyblue);
+  }
+  .box-2-1 button{
+    margin-left: 20%;
+  }
+  .box-2-1 h4{
+    margin-top: -25px;
+  }
+  .box-3{
+    display: none;
+    width: 180px;
+    height: 100px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 65px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  .box-3:hover {
+    transform: scale(1.05);
+    background-color: white;
+  }
+  .box-3 button{
+    width:120px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 580px) {
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin-top: 0px;
+    }
+    .box-container div:first-child {
+      margin-left: 70px;
+    }
+    .box-container div:nth-child(4) {
+      margin-left: 70px;
+    }
+    .box-container div:nth-child(7) {
+      margin-left: 70px;
+    }
+    .box{
+      margin-right: 0px;
+      width: 180px;
+      margin-left: 70px;
+    }
+    .box-1{
+      width: 180px;
+      margin-left: 70px;
+    }
+    .box-2{
+      display: none;
+    }
+    .box-3{
+      display: grid;
+    }
+  }
+  @media screen and (min-width: 580px) and (max-width:820px){
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      max-width: 1000px;
+      align-items: center;
+      margin-top: 120px;
+    }
+    .box{
+      margin-right: 20px;
+      margin-left: 20px;
+      width: 180px;
+    }
+    .box-1{
+      margin-right: 20px;
+      margin-left: 20px;
+      width: 180px;
+    }
+    .box-2{
+      display: none;
+    }
+    .box-container div:first-child {
+      margin-left: 100px;
+    }
+    .box-container div:nth-child(3) {
+      margin-left: 100px;
+    }
+    .box-container div:nth-child(4) {
+      margin-left: 20px;
+    }
+    .box-container div:nth-child(7) {
+      margin-left: 100px;
+    }
+    .box-container div:nth-child(5) {
+      margin-left: 100px;
+    }
+    .box-container div:nth-child(9){
+      margin-left: 100px;
+    }
+    .box-3{
+      display: grid;
+      margin-left: 20px;
+    }
+  }
+  @media  screen and (min-width:820px) and (max-width:1000px){
+    .box-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 190px;
+    }
+    .box{
+      margin-bottom: 40px;
+      margin-right: 40px;
+    }
+    .box-2{
+      height: 200px;
+      width: 700px;
+    }
+    .box-2 img {
+      width: 150px;
+      height: 70px;
+    }
+    .box-container div:first-child {
+      margin-left: 100px;
+    }
+    .box-container div:nth-child(4) {
+      margin-left: 100px;
+    }
+    .box-container div:nth-child(7) {
+      margin-left: 100px;
+    }
+    .box-2{
+      height: 250px;
+    }
+    .box-2 img {
+      height: 70px;
+      width: 150px;
+    }
+    .box-2 button{
+      width: 120px;
+    }
+    .box-2-1 {
+      width: 200px;
+      height: 150px;
+      margin-left: 14px;
+      margin-right: 16px;
+    }
+    .box-1:last-child{
+      display: none;
+    }
+  }
